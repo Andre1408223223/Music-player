@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+/* ---------------------------------------------
+   Base styles
+---------------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #242323;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lilita One", normal;
+}
+
+/* ---------------------------------------------
+   Header
+---------------------------------------------- */
+#phone_header_container {
+  width: 100%;
+  height: clamp(5rem, 9vw, 5rem);
+  display: flex;
+  align-items: center;
+}
+
+/* Settings button: subtle continuous pulse + hover spin */
+#settings_button_phone {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 7vw;
+  cursor: pointer;
+  /* continuous slow pulse */
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* On hover: quick rotation */
+#settings_button_phone:hover {
+  animation: rotate 0.5s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------------------------------------
+   Song Feed Containers
+---------------------------------------------- */
+.song-feed {
+  margin-top: 4vh;
+  min-height: 159px;
+  width: 100%;
+  padding-left: 5vw;
+}
+
+.song_feed_header {
+  display: flex;
+  align-items: center;
+}
+
+.song_feed_title {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Lilita One", cursive;
+  font-size: 20px;
+  cursor: default;
+}
+
+/* Next-arrow button: hover slide */
+.arrow-button {
+  margin-left: auto;
+  margin-right: 2vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.arrow-button:hover {
+  transform: translateX(4px);
+}
+
+/* ---------------------------------------------
+   Song List & Items
+---------------------------------------------- */
+.song-list {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  padding-bottom: 10px;
+  gap: 2vw;
+  cursor: pointer;
+}
+
+#phone_song_feed_medium .song-list {
+  gap: 3vw;
+}
+
+#phone_song_feed_small .song-list {
+  gap: 4vw;
+}
+
+.song-list::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Base hover effect for all song items */
+.song_item {
+  flex: 0 0 auto;
+  border-radius: 11px;
+  background: gray;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Large container song items */
+#phone_song_feed_large .song_item {
+  min-width: 124px;
+  min-height: 124px;
+}
+
+/* Medium container song items */
+#phone_song_feed_medium .song_item {
+  min-width: 99px;
+  min-height: 99px;
+  border-radius: 9px;
+}
+
+/* Small container song items */
+#phone_song_feed_small .song_item {
+  min-width: 75px;
+  min-height: 75px;
+  border-radius: 7px;
+}
+
+/* Hover: grow slightly & lift */
+.song_item:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------------------------------------
+   END
+---------------------------------------------- */
