@@ -1,55 +1,63 @@
-1. Idea (15mn)
+**1. Idea** (15mn)
 
-A music player for playing mp3 files
+- A music player for playing mp3 files
+- A centrelised music player that i dont have to use youtube music
+- Muisc player nothing more
+- A online scraper or downloader
 
-A centrelised music player that i dont have to use youtube music
+**2. Proof of concept** (10 mn 1 feuture)
 
-Muisc player nothing more
+- Make short script showing the idea works and is worth it
 
-A online scraper or downloader
+**3. Define MoSCoW** (15 mn)
 
-2. Proof of concept (10 mn 1 feuture)
+- must have
 
-Make short script showing the idea works and is worth it
-3. Define MoSCoW (15 mn)
+  - a way to play music
+  - a way to skip/previous trakcs
+  - a way to pauze trakcs
 
-must have
+- Should have
 
-a way to play music
-a way to skip/previous trakcs
-a way to pauze trakcs
-Should have
+  - A way to add songs to playlist
+  - a way to shuflle/repeats tracks
 
-A way to add songs to playlist
-a way to shuflle/repeats tracks
-Could haves
+- Could haves
 
-background music playing
-Wont haves
+  - background music playing
 
-A way to download from youtube
-A way to discover songs just for playing
-4 Instoration (10mn)
+- Wont haves
+  - A way to download from youtube
+  - A way to discover songs just for playing
 
-look for simular whebsides what things do you like what not what should be in the final app?
-4. Wireframes (20 mn)
+**4 Instoration** (10mn)
 
-Draw screens and layout
-5. Moodboard / Styling
+- look for simular whebsides what things do you like what not what should be in the final app?
 
-Pick colors, fonts, inspiration
-6. Basic ontwerp
+**4. Wireframes** (20 mn)
 
-Build layout with no logic yet
-7. Final ontwerp
+- Draw screens and layout
 
-Final version of design, clean and complete
-8. Code behind final design
+**5. Moodboard / Styling**
 
-Add real logic behind UI
-9. Make MVP
+- Pick colors, fonts, inspiration
 
-Make it usable with all Must-haves
-10. Polish
+**6. Basic ontwerp**
 
-Add animations, test, fix bugs, improve UI
+- Build layout with no logic yet
+
+**7. Final ontwerp**
+
+- Final version of design, clean and complete
+
+**8. Code behind final design**
+
+- Add real logic behind UI
+
+**9. Make MVP**
+
+- Make it usable with all Must-haves
+
+**10. Polish**
+
+- Add animations, test, fix bugs, improve UI
