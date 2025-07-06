@@ -182,3 +182,74 @@ body {
     display: none;
   }
 }
+
+/* ---------------------------------------------
+   Laptop styling
+---------------------------------------------- */
+#laptop_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#laptop_side_bar {
+  width: clamp(119px, 15vw, 125px);
+  height: 100%;
+  background-color: #323232;
+  border-radius: 0 27px 27px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+
+.side_bar_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2 s ease;
+}
+
+.side_bar_button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  color: #fff;
+}
+
+#laptop_main_container {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+
+.song_feed_laptop {
+  width: fit-content;
+}
+
+.song_feed_laptop #song_feed_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: clamp(50vw, 90vw, 1200px);
+}
+
+#laptop_main_container .song-list {
+  padding-left: min(8px, 1vw);
+}
+
+.song_feed_laptop .song-list .song_item {
+  width: 140px;
+  height: 140px;
+  background-color: gray;
+}
+
+.arrow-button {
+  margin-left: auto;
+}
+
+@media (max-width: 425px) {
+  #laptop_container {
+    display: none;
+  }
+}
