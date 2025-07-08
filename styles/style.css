@@ -178,7 +178,8 @@ body {
   #phone_song_feed_large,
   #phone_song_feed_medium,
   #phone_song_feed_small,
-  #footer_phone {
+  #footer_phone,
+  #phone_main_container {
     display: none;
   }
 }
