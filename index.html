@@ -5,141 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music player</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
-
     <!-- Laptop containers -->
-     <div id="laptop_container">
-     <div id="laptop_side_bar">
-      <div class="side_bar_button"> <img src="images/icons/home.svg" /></div>
-      <div class="side_bar_button"> <img src="images/icons/search.svg" /></div>
-      <div class="side_bar_button"> <img src="images/icons/favroutes.svg" /></div>
-      <div class="side_bar_button"> <img src="images/icons/radio.svg" /></div>
-     </div>
-
-
-     <div id="laptop_main_container">
-
-      <div class="song_feed_laptop large">
-       <div id="song_feed_header">
-        <h1 class="song_feed_title">Recently Played</h1>
-        <div class="arrow-button">
-          <img src="images/icons/arrow-small-right.svg" alt="See more" />
+    <div id="laptop_container">
+      <div id="laptop_side_bar">
+        <div class="side_bar_button" id="laptop_home_button">
+          <img src="images/icons/home.svg" />
         </div>
-       </div>
-
-       <div class="song-list">
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-       </div>
-
-      </div>
-
-      <div class="song_feed_laptop medium">
-               <div id="song_feed_header">
-        <h1 class="song_feed_title">Recently Played</h1>
-        <div class="arrow-button">
-          <img src="images/icons/arrow-small-right.svg" alt="See more" />
+        <div class="side_bar_button" id="laptop_search_button">
+          <img src="images/icons/search.svg" />
         </div>
-       </div>
-
-       <div class="song-list">
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-       </div>
-      </div>
-
-
-
-      <div class="song_feed_laptop small">
-               <div id="song_feed_header">
-        <h1 class="song_feed_title">Recently Played</h1>
-        <div class="arrow-button">
-          <img src="images/icons/arrow-small-right.svg" alt="See more" />
+        <div class="side_bar_button" id="laptop_favroute_button">
+          <img src="images/icons/favroutes.svg" />
         </div>
-       </div>
-
-       <div class="song-list">
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-         <div class="song_item"></div>
-       </div>
+        <div class="side_bar_button" id="laptop_radio_button">
+          <img src="images/icons/radio.svg" />
+        </div>
       </div>
-     </div>  
-     </div>
+    </div>
 
     <!-- Phone conttainer -->
-    <div id="phone_header_container">
-      <div></div>
-
-      <div id="settings_button_phone">
-        <img src="images/icons/settings.svg" />
+    <div id="phone_container">
+      <div id="phone_main_container"></div>
+      <div id="footer_phone">
+        <div class="footer_button"><img src="images/icons/home.svg" /></div>
+        <div class="footer_button"><img src="images/icons/search.svg" /></div>
+        <div class="footer_button">
+          <img src="images/icons/favroutes.svg" />
+        </div>
+        <div class="footer_button"><img src="images/icons/radio.svg" /></div>
       </div>
-    </div>
-
-    <!-- LARGE -->
-    <div id="phone_song_feed_large" class="song-feed">
-    <div class="song_feed_header">
-      <h1 class="song_feed_title">Recently Played</h1>
-      <div class="arrow-button">
-        <img src="images/icons/arrow-small-right.svg" alt="See more" />
-      </div>
-    </div>
-    <div class="song-list">
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-    </div>
-    </div>
-  
-    <!-- MEDIUM -->
-    <div id="phone_song_feed_medium" class="song-feed">
-    <div class="song_feed_header">
-      <h1 class="song_feed_title">Recently Played</h1>
-      <div class="arrow-button">
-        <img src="images/icons/arrow-small-right.svg" alt="See more" />
-      </div>
-    </div>
-    <div class="song-list">
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-    </div>
-    </div>
-  
-    <!-- SMALL -->
-    <div id="phone_song_feed_small" class="song-feed">
-    <div class="song_feed_header">
-      <h1 class="song_feed_title">Recently Played</h1>
-      <div class="arrow-button">
-        <img src="images/icons/arrow-small-right.svg" alt="See more" />
-      </div>
-    </div>
-    <div class="song-list">
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-      <div class="song_item"></div>
-    </div>
-    </div>
-  
-    <div id="footer_phone">
-   <div class="footer_button"><img src="images/icons/home.svg"></div>
-   <div class="footer_button"><img src="images/icons/search.svg"></div>
-   <div class="footer_button"><img src="images/icons/favroutes.svg"></div>
-   <div class="footer_button"><img src="images/icons/radio.svg"></div>
-    </div>
- 
     </div>
   </body>
 </html>
